@@ -8,6 +8,29 @@
 */
 
 function isAnagram(str1, str2) {
+  function sort(str){
+    var array = str.split("")
+    array = array.sort();
+    var sortedstring =  array.join("")
+    return sortedstring
+    
+}
+
+
+ function isanagram(str1,str2){
+    var strlowercase1 =  str1.toLowerCase();
+    var strlowercase2 =  str2.toLowerCase();
+    
+      if(sort(str1) == sort(str2)){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+    
+    var ans = isanagram("rsap" , "pasr");
+    console.log(ans);
 
 }
 
